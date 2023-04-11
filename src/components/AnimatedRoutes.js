@@ -1,21 +1,24 @@
-import React from 'react'
-import Home from './components/Home'
-import Projects from './components/Projects'
-import Experience from './components/Experience'
-import About from './components/About';
+import React from 'react';
+import Home from './Home';
+import Projects from './Projects';
+import Experience from './Experience';
+import About from './About';
 import {Routes, Route, useLocation} from 'react-router-dom';
+import { AnimatePresence } from "framer-motion";
 
 
 function AnimatedRoutes() {
+  const location = useLocation()  
+
   return (
-    <div>
-        <Routes>
+    <AnimatePresence>
+        <Routes location={location} key={location.pathname}>
             <Route path='/' exact Component={Home}></Route>
             <Route path='/projects' exact Component={Projects}></Route>
             <Route path='/experience' exact Component={Experience}></Route>
             <Route path='/about' exact Component={About}></Route>
         </Routes>
-    </div>
+    </AnimatePresence>
   )
 }
 

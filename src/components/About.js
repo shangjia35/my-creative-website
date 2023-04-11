@@ -1,10 +1,15 @@
 import React from 'react'
+import {motion} from 'framer-motion'
 
 function About() {
   return (
-    <div>
+    <motion.div 
+        className='about'
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        exit={{opacity: 0}}>
       about
-    </div>
+    </motion.div>
   )
 }
 

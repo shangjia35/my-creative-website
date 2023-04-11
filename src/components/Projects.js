@@ -1,10 +1,15 @@
 import React from 'react'
 import Card from './Card'
 import './Projects.css'
+import {motion} from "framer-motion"
 
 function Projects() {
   return (
-    <div className='projects'>
+    <motion.div 
+      className='projects'
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      exit={{opacity: 0}}>
       <h1>Check out my Projects!</h1>
       <div className='projects-container'>
         <div className='projects-wrapper'>
@@ -30,7 +35,7 @@ function Projects() {
             </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
