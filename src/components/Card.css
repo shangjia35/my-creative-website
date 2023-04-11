@@ -17,18 +17,18 @@
     text-decoration: none;
 }
 
-.card-pic-wrapper {
+.card-pic-wrap {
     position: relative;
     width: 100%;
     padding-top: 67%;
     overflow: hidden;
 }
 
-.card-pic-wrapper::after {
+.card-pic-wrap::after {
     content: attr(data-category);
     position: absolute;
     bottom: 0;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     padding: 6px 8px;
     max-width: calc((100%) - 60px);
     font-size: 12px;
@@ -53,7 +53,7 @@
     transition: all 0.2s linear;
 }
 
-.cards-img:hover {
+.card-img:hover {
     transform: scale(1.1);
 }
 

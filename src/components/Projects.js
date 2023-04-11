@@ -10,21 +10,21 @@ function Projects() {
         <div className='projects-wrapper'>
             <ul className='projects-items'>
                 <Card 
-                    src='/images/image1.jpeg' 
+                    src='/images/img1.jpeg' 
                     text='Chatbot Tweets Analyzer'
-                    label='ML'
+                    label='Python, NLP'
                     path='/projects'
                 />
                 <Card 
-                    src='/images/image1.jpeg' 
+                    src='/images/img1.jpeg' 
                     text='Personal Website'
-                    label='Frontend'
+                    label='HTML, CSS, JavaScript'
                     path='/projects'
                 />
                 <Card 
-                    src='/images/image1.jpeg' 
+                    src='/images/img1.jpeg' 
                     text='Unix Shell'
-                    label='CS252L'
+                    label='C/C++, Lex/Yacc, Agile'
                     path='/projects'
                 />
             </ul>
