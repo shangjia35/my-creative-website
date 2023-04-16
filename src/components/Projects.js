@@ -9,10 +9,23 @@ function Projects() {
       className='projects'
       initial={{opacity: 0}}
       animate={{opacity: 1}}
-      exit={{opacity: 0}}>
-      <h1>Check out my Projects!</h1>
+      // exit={{opacity: 0}}
+      // transition={{delay: 0.1}}
+    >
+      <motion.h1
+        initial={{x: -1000}}
+        animate={{x: 0}}
+        transition={{type: 'spring', stiffness: 120}}
+      >
+        Check out my Projects!
+      </motion.h1>
       <div className='projects-container'>
-        <div className='projects-wrapper'>
+        <motion.div 
+          className='projects-wrapper'
+          initial={{y: -1000}}
+          animate={{y: 0}}
+          transition={{delay: 1, type: 'spring', stiffness: 100}}
+        >
             <ul className='projects-items'>
                 <Card 
                     src='/images/img1.jpeg' 
@@ -33,7 +46,7 @@ function Projects() {
                     path='/projects'
                 />
             </ul>
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   )
