@@ -21,7 +21,7 @@ function About() {
         animate={{x: 0}}
         transition={{type: 'spring', stiffness: 120}}
       >
-        <img className='about-img' src='/images/img2.jpeg' alt='zoo'></img>
+        <img className='about-img' src='/my-creative-website/images/img2.jpeg' alt='zoo'></img>
       
         <div className='about-socials'>
           <a href="https://www.linkedin.com/in/shangjiaxu35/"><BsLinkedin></BsLinkedin></a>

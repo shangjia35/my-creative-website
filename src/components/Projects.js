@@ -28,19 +28,19 @@ function Projects() {
         >
             <ul className='projects-items'>
                 <Card 
-                    src='/images/img1.jpeg' 
+                    src='/my-creative-website/images/img1.jpeg' 
                     text='Chatbot Tweets Analyzer'
                     label='Python, NLP'
                     path='/projects'
                 />
                 <Card 
-                    src='/images/img1.jpeg' 
+                    src='/my-creative-website/images/img1.jpeg' 
                     text='Personal Website'
                     label='HTML, CSS, JavaScript'
                     path='/projects'
                 />
                 <Card 
-                    src='/images/img1.jpeg' 
+                    src='/my-creative-website/images/img1.jpeg' 
                     text='Unix Shell'
                     label='C/C++, Lex/Yacc, Agile'
                     path='/projects'

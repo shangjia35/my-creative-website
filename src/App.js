@@ -6,7 +6,7 @@ import AnimatedRoutes from './components/AnimatedRoutes';
 function App() {
   return (
     <>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Navbar />
         <AnimatedRoutes />
       </Router>

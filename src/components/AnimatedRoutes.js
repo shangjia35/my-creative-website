@@ -13,10 +13,10 @@ function AnimatedRoutes() {
   return (
     <AnimatePresence>
         <Routes location={location} key={location.pathname}>
-            <Route path='/my-creative-website' exact Component={Home}></Route>
-            <Route path='/my-creative-website/projects' exact Component={Projects}></Route>
-            <Route path='/my-creative-website/experience' exact Component={Experience}></Route>
-            <Route path='/my-creative-website/about' exact Component={About}></Route>
+            <Route path='/' exact Component={Home}></Route>
+            <Route path='/projects' exact Component={Projects}></Route>
+            <Route path='/experience' exact Component={Experience}></Route>
+            <Route path='/about' exact Component={About}></Route>
         </Routes>
     </AnimatePresence>
   )
