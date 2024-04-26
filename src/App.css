@@ -9,11 +9,11 @@
 .services,
 .products,
 .sign-up {
-  display: flex;
-  height: 90vh;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
+  /* display: flex; */
+  /* height: 90vh; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* font-size: 3rem; */
 }
 
 .services {
